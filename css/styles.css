@@ -1,0 +1,57 @@
+:root {
+    --gris: #cad4d5;
+    --naranja: #d8754d;
+    --amarillo: #ffd872;
+    --ibm: 'IBM Plex Sans', sans-serif;
+    --noto: 'Noto Serif', serif;
+}
+
+/* Globales */
+
+html {
+    font-size: 62.5%; /* 1rem = 10px*/
+    box-sizing: border-box;
+    font-family: var(--ibm);
+}
+
+html body h1,
+html body h2,
+html body h3,
+html body h4 {
+    text-transform: uppercase;
+}
+
+html body a {
+    text-decoration: none;
+  }
+
+p {
+    font-family: var(--noto);
+    font-weight: 200;
+}
+
+/* portada */
+
+.portada {
+    text-align: center;
+    background-color: var(--gris);
+    margin: 0;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portada h1 {
+    font-size: 7rem;
+    font-weight: 400;
+    margin: 0;
+    color: white;
+}
+
+.portada span {
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--naranja);
+}
