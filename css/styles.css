@@ -9,6 +9,7 @@
 /* Globales */
 
 html {
+    
     font-size: 62.5%; /* 1rem = 10px*/
     box-sizing: border-box;
     font-family: var(--ibm);
@@ -28,6 +29,7 @@ html body a {
 p {
     font-family: var(--noto);
     font-weight: 200;
+    font-size: 1.8rem;
 }
 
 /* portada */
@@ -35,8 +37,7 @@ p {
 .portada {
     text-align: center;
     background-color: var(--gris);
-    margin: 0;
-    height: 90vh;
+    height: 125vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,3 +56,81 @@ p {
     text-transform: uppercase;
     color: var(--naranja);
 }
+
+/* seccion iconos */
+
+.seccion-iconos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    bottom: 10rem;
+}
+
+.grupo-iconos {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    position: absolute;
+    top: -10rem
+}
+
+.icono {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-height: 20rem;
+    max-width: 25rem;
+    box-shadow: 10px 0px 50px -11px rgba(0,0,0,0.19);
+    padding: 5rem 3rem;
+}
+
+.icono img {
+    max-width: 6rem;
+}
+
+.icono h4 {
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    color: var(--naranja);
+    margin: 1rem 0;
+}
+
+.icono p {
+    margin: 0;
+    line-height: 2.5rem;
+}
+
+.seccion-iconos img {
+    width: 70%;
+    height: 65rem;
+    object-fit: cover;
+    object-position: 50% 100%;
+}
+/* seccion nosotros*/
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -5rem;
+}
+
+.nosotros p {
+    font-size: 2rem;
+    max-width: 50%;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.nosotros p:nth-of-type(2) {
+    font-family: var(--ibm);
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 3.5rem;
+}
+
