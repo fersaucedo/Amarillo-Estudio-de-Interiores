@@ -84,7 +84,7 @@ p {
     text-align: center;
     max-height: 20rem;
     max-width: 25rem;
-    box-shadow: 10px 0px 50px -11px rgba(0,0,0,0.19);
+    box-shadow: 10px 0px 50px -11px rgba(0,0,0,0.50);
     padding: 5rem 3rem;
 }
 
@@ -96,7 +96,7 @@ p {
     font-weight: 500;
     font-size: 2rem;
     letter-spacing: .5rem;
-    color: var(--naranja);
+    color: var(--amarillo);
     margin: 1rem 0;
 }
 
@@ -117,11 +117,11 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -5rem;
+    margin: -5rem 0 10rem;
 }
 
 .nosotros p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     max-width: 50%;
     text-align: center;
     line-height: 3rem;
@@ -129,8 +129,55 @@ p {
 
 .nosotros p:nth-of-type(2) {
     font-family: var(--ibm);
-    font-size: 2.5rem;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 400;
     line-height: 3.5rem;
 }
 
+/* portfolio*/
+
+.portfolio {
+    background-color: var(--gris);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 400;
+    width: 70%;
+    border-bottom: .2rem solid var(--naranja);
+    padding: 5rem 0 2.5rem 0;
+    margin-bottom: 5rem;
+}
+
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas con igual tamaño */
+    grid-template-rows: repeat(2, 1fr); /* 2 filas con igual tamaño */
+    gap: 1.5rem;
+    padding: 0 10rem 10rem;
+  
+}
+
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boton {
+    background-color: #ffffff;
+    color: #000000;
+    border: 0.2rem solid var(--naranja);
+    padding: 1.8rem 7rem;
+    text-transform: uppercase;
+    transition: background-color 0.5s ease;
+  }
+  .boton:hover {
+    background-color: var(--amarillo);
+    color: var(--naranja);
+  }
