@@ -2,17 +2,16 @@
     --gris: #cad4d5;
     --naranja: #d8754d;
     --amarillo: #ffd872;
-    --ibm: 'IBM Plex Sans', sans-serif;
     --noto: 'Noto Serif', serif;
+    --neue: 'Neue Montreal', sans-serif;
 }
 
 /* Globales */
 
 html {
-    
     font-size: 62.5%; /* 1rem = 10px*/
     box-sizing: border-box;
-    font-family: var(--ibm);
+    font-family: var(--neue);
 }
 
 html body h1,
@@ -35,27 +34,13 @@ p {
 /* portada */
 
 .portada {
-    text-align: center;
     background-color: var(--gris);
-    height: 125vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.portada h1 {
-    font-size: 7rem;
-    font-weight: 400;
-    margin: 0;
-    color: white;
-}
-
-.portada span {
-    font-size: 4rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: var(--naranja);
-}
 
 /* seccion iconos */
 
@@ -69,10 +54,12 @@ p {
 
 .grupo-iconos {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 3rem;
-    position: absolute;
-    top: -10rem
+    margin-bottom: 5rem;
+    /* position: absolute;
+    top: -10rem */
 }
 
 .icono {
@@ -106,8 +93,8 @@ p {
 }
 
 .seccion-iconos img {
-    width: 70%;
-    height: 65rem;
+    width: 100%;
+    max-height: 65rem;
     object-fit: cover;
     object-position: 50% 100%;
 }
@@ -117,18 +104,18 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: -5rem 0 10rem;
+    margin: -5rem 0 5rem;
 }
 
 .nosotros p {
     font-size: 1.8rem;
-    max-width: 50%;
+    max-width: 87%;
     text-align: center;
     line-height: 3rem;
 }
 
 .nosotros p:nth-of-type(2) {
-    font-family: var(--ibm);
+    font-family: var(--neue);
     font-size: 2rem;
     font-weight: 400;
     line-height: 3.5rem;
@@ -185,13 +172,13 @@ p {
   }
 
   /* Opiniones */
-
+/* 
   .opiniones {
     height: 60rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 35rem;
+    /* gap: 35rem; */
   }
 
   .opinion {
@@ -231,6 +218,6 @@ p {
 
   .iconos-contacto a {
     padding: 0 1.5rem;
-  }
+  } */
 
   /* formulario */
